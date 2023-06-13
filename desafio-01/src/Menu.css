@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Bebas_Neue';
+    src: url('/src/fonts/Bebas_Neue/BebasNeue-Regular.ttf') format ('ttf'),
+
+    /* Outras propriedades da fonte, como font-weight, font-style, etc. */
+  }
+  
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+header{ 
+    max-width: 1200px;
+    height: 2000px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(59, 55, 55);
+    display: flex;
+    padding: 50px 10px;
+    align-items: center;
+}
+
+.menu_title{
+    display: inline-block;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+    width: 400px;
+  
+
+}
+.menu_options ul{
+    display: flex;
+    flex-direction:column;
+    text-decoration: none;
+}
+.menu_options ul{
+    padding-left: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style-type: none;
+
+}
+.menu_options li{
+  margin-bottom:30px;
+}
+.menu_options a{
+    padding-left: 20px;
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Bebas_Neue';
+
+}
+header {
+    /* Restante do estilo do header */
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100vh;
+    background-color: rgb(41, 33, 33);
+    transform: translateX(-200px);
+    transition: transform 0.3s ease;
+    border-radius: 8px;
+  }
+  .menu_toggle{
+    position:absolute;
+    z-index: 9999 !important;
+    top: 30px;
+    left: 230px;
+    font-size: 30px;
+    border: 0;
+    background-color: transparent;
+    color:white
+  }
+  
+  header.menu-open {
+    transform: translateX(0);
+  }
+  .logo_header{
+    font-size: 300px;
+    color: red;
+  }

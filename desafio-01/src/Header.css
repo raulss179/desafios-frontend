@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'Bebas_Neue';
+    src: url('/src/fonts/Bebas_Neue/BebasNeue-Regular.ttf') format ('ttf'),
+
+    /* Outras propriedades da fonte, como font-weight, font-style, etc. */
+  }
+.Header{
+    height: 100px;
+    background-color: rgb(41, 33, 33);
+    width:100%;
+    transition: top 5s ease-in-out;
+   
+}
+.Header_menu{
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    transition: top 5s ease-in-out;
+   
+}
+.Header_logo{
+    display: flex;
+    width: 20%;
+    flex-direction:row;
+    justify-content: center;
+    text-align: center;
+}
+.menu_options_desktop ul{
+    display:inline-block;
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.menu_options_desktop li{
+    display:inline-block;
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: 20px;
+}
+.menu_options_desktop a{
+    color:white;
+    text-transform: uppercase;
+    margin-right: 25px;
+    font-size:20px;
+    text-decoration: none;
+    font-family: 'Bebas_Neue';
+}
+.menu_options_desktop{
+justify-content: flex-end;
+display: inline-block;
+margin-top: 35px;
+
+}
