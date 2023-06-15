@@ -19,7 +19,17 @@
     border-radius: 50%;
     animation: star-flicker 2s infinite, star-movement 20s infinite;
   }
-  
+  .star-2 {
+    position: absolute;
+    top: 100%;
+    left: calc(100vw * var(--x));
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    border-radius: 50%;
+    animation: star-movement-2 5s linear infinite;
+    animation-delay: calc(5s * var(--y));
+  }
   @keyframes star-flicker {
     0% {
       opacity: 0;
@@ -38,5 +48,15 @@
     }
     100% {
       transform: translateY(-100%);
+    }
+  }
+
+  
+  @keyframes star-movement-2 {
+    0% {
+      top: calc(100% * var(--y));
+    }
+    100% {
+      top: 0%;
     }
   }

@@ -1,5 +1,5 @@
 import React from 'react';
-import  './StarBackground.css';
+import './StarBackground.css';
 
 const StarBackground = () => {
   return (
@@ -10,11 +10,15 @@ const StarBackground = () => {
         const movementClass = index % 2 === 0 ? 'star-movement-up' : 'star-movement-down';
 
         return (
-          <div
-            className={`star ${movementClass}`}
-            style={{ '--x': x, '--y': y }}
-            key={index}
-          ></div>
+          <div className={ `star ${movementClass}`} style={{ '--x': x, '--y': y }} key={index}></div>
+        );
+      })}
+      {Array.from({ length: 50 }, (_, index) => {
+        const x = Math.random();
+        const y = Math.random();
+
+        return (
+          <div className="star-2" style={{ '--x': x, '--y': y }} key={index}></div>
         );
       })}
     </div>
@@ -22,3 +26,4 @@ const StarBackground = () => {
 };
 
 export default StarBackground;
+

@@ -10,7 +10,9 @@ function Corpo() {
 return(
 <div className='Corpo'>
     <section className='init_description'>
-    <div className='text_description'><p>O CheckSpeech AI é a solução definitiva para a conversão de fala em texto e interpretação do sentimento dominante. Com uma tecnologia avançada de reconhecimento de voz e processamento de linguagem natural, oferecemos APIs poderosas que revolucionam a maneira como lidamos com áudios e extraímos informações valiosas.</p></div>
+    <div className='text_description'>
+    <h2>CheckSpeech AI</h2>
+    <p>O CheckSpeech AI é a solução definitiva para a conversão de fala em texto e interpretação do sentimento dominante. Com uma tecnologia avançada de reconhecimento de voz e processamento de linguagem natural, oferecemos APIs poderosas que revolucionam a maneira como lidamos com áudios e extraímos informações valiosas.</p></div>
     <div className='Video_description'>Video aqui</div>
 </section>
     <section className='Criando_necessidade'>
