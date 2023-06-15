@@ -1,7 +1,22 @@
 
-.teste{
-    font-size: 300px;
-    background-color: yellow;
-    height: 2000px;
+.init_description{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding:200px 150px;
+    height:max-content;
 
+}
+.text_description{
+    color: white;
+    width: 60%;
+    font-size: 20px;
+
+}
+.text_description p{
+    text-align: justify;
+}
+.video_description{
+    width: 600px;
+    text-align:center;
 }

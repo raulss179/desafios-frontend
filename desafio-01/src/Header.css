@@ -6,7 +6,6 @@
   }
 .Header{
     height: 100px;
-    background-color: rgb(41, 33, 33);
     width:100%;
     transition: top 5s ease-in-out;
    
