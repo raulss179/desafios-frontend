@@ -1,20 +1,60 @@
 
+@font-face {
+    font-family: 'Bebas_Neue';
+    src: url('/src/fonts/Bebas_Neue/BebasNeue-Regular.ttf') format ('ttf'),
+    /* Outras propriedades da fonte, como font-weight, font-style, etc. */
+  }
+  @font-face {
+    font-family: 'Bropotic';
+    src:url('/src/fonts/bropotic/Bropotic.otf') format ('opentype');
+
+    /* Outras propriedades da fonte, como font-weight, font-style, etc. */
+  }
 .init_description{
     display: flex;
     flex-direction: row;
     width: 100%;
     padding:200px 150px;
     height:max-content;
+    justify-content: center;
 
 }
 .text_description{
+    display: flex;
+    flex-direction: column;
     color: white;
-    width: 60%;
+    width: 100%;
     font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 80px;
+
+}
+.text_description h2{
+    font-family:'Bropotic' ;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.text_description p{
+    font-family:'Bropotic' ;
+    margin-bottom: 30px;
+}
+.text_description a{
+    font-family:'Bropotic' ;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-decoration: none;
+    color:white;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 8px 8px;
 
 }
 .text_description p{
     text-align: justify;
+    font-family: 'Bebas_Neue';
 }
 .video_description{
     width: 600px;

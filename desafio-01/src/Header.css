@@ -1,31 +1,31 @@
+
 @font-face {
     font-family: 'Bebas_Neue';
     src: url('/src/fonts/Bebas_Neue/BebasNeue-Regular.ttf') format ('ttf'),
 
     /* Outras propriedades da fonte, como font-weight, font-style, etc. */
   }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .Header{
-    height: 100px;
+    display: flex;
     width:100%;
     transition: top 5s ease-in-out;
+    backdrop-filter: blur(8px);
    
 }
-.Header_menu{
-    display: flex;
-    align-items: baseline;
-    justify-content: flex-end;
-    transition: top 5s ease-in-out;
-   
-}
-.Header_logo{
-    display: flex;
-    width: 20%;
-    flex-direction:row;
-    justify-content: center;
-    text-align: center;
+.menu_options_desktop img{
+
+    width: 150px;
+    height: 150px;
 }
 .menu_options_desktop ul{
-    display:inline-block;
+    display:flex;
+    align-items: center;
+    justify-content:center;
     list-style-type: none;
     text-decoration: none;
     margin-right: 20px;
@@ -45,8 +45,30 @@
     font-family: 'Bebas_Neue';
 }
 .menu_options_desktop{
-justify-content: flex-end;
-display: inline-block;
-margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: baseline;
+    align-content: baseline;
+    width: 100%;
+    height: 130px;
+    align-items:center;
+    border-bottom: 1px solid white;
 
 }
+.menu_options_desktop img{
+    width: 250px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

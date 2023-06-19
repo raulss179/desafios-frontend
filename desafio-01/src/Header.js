@@ -22,10 +22,10 @@ function Header() {
 
   return (
     
-      <div className='Header' style={{ display: isVisible ? 'block' : 'none',position: isVisible ? 'fixed' : 'none', top: isVisible ? '0' : '-50px' }} >
-        <div className='Header_menu'>
-        <div className='Header_logo'>logo aqui</div> 
+      <div className='Header' style= {{ display: isVisible ? 'block' : 'none',position: isVisible ? 'fixed' : 'none', top: isVisible ? '0' : '-50px' }} >
+        
         <div className='menu_options_desktop'>
+        <img src={require('./img/logo.png')} alt='Logo da pagina'/>
           <ul>
             <li><a href="/solucoes">Soluções</a></li>
             <li><a href="/sobre">Clientes</a></li>
@@ -33,7 +33,6 @@ function Header() {
             <li><a href="/contato">Contato</a></li>
           </ul>
         </div>
-      </div>
       </div>
 
   );
