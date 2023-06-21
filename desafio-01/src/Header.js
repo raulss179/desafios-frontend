@@ -25,12 +25,12 @@ function Header() {
       <div className='Header' style= {{ display: isVisible ? 'block' : 'none',position: isVisible ? 'fixed' : 'none', top: isVisible ? '0' : '-50px' }} >
         
         <div className='menu_options_desktop'>
-        <img src={require('./img/logo.png')} alt='Logo da pagina'/>
+        <a href='#'><img src={require('./img/logo01.png')} alt='Logo da pagina'/></a>
           <ul>
-            <li><a href="/solucoes">Soluções</a></li>
-            <li><a href="/sobre">Clientes</a></li>
-            <li><a href="/precos">Preços</a></li>
-            <li><a href="/contato">Contato</a></li>
+            <li><a href="#secao01">Soluções</a></li>
+            <li><a href="#secao02">Clientes</a></li>
+            <li><a href="#secao03">Preços</a></li>
+            <li><a href="#secao04">Contato</a></li>
           </ul>
         </div>
       </div>

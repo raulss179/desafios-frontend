@@ -4,7 +4,7 @@
     left: 0;
     width: 100%;
     height:100%;
-    background: linear-gradient(to left,#0a0a0a,#113546,#144668,#113546,#0a0a0a);
+    background: radial-gradient(circle,#0a0a0a,#174053,#081c29,#0f0f0f,black);
     overflow: hidden;
     z-index: -1;
   }
@@ -22,12 +22,12 @@
   .star-2 {
     position: absolute;
     top: 100%;
-    left: calc(100vw * var(--x));
+    left: calc(100vw * var(--x)); 
     width: 2px;
     height: 2px;
     background-color: white;
     border-radius: 50%;
-    animation: star-movement-2 100s ease-in-out infinite;
+    animation: star-movement-2 50s reverse ease-in-out infinite;
   
     animation-fill-mode: backwards;
   }

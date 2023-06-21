@@ -18,10 +18,10 @@ function Menu() {
       {isMenuOpen && (
         <nav className='menu_options'>
           <ul>
-            <li><a href="/solucoes">Soluções</a></li>
-            <li><a href="/sobre">Clientes</a></li>
-            <li><a href="/contato">Preços</a></li>
-            <li><a href="/contato">Contato</a></li>
+            <li><a href="#secao01">Soluções</a></li>
+            <li><a href="#secao02">Clientes</a></li>
+            <li><a href="#secao03">Preços</a></li>
+            <li><a href="#secao04">Contato</a></li>
           </ul>
         </nav>
       )}

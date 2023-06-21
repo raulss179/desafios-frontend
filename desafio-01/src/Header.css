@@ -5,36 +5,32 @@
 
     /* Outras propriedades da fonte, como font-weight, font-style, etc. */
   }
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  html {
+    scroll-behavior: smooth;
+  }
+
 .Header{
     display: flex;
     width:100%;
     transition: top 5s ease-in-out;
     backdrop-filter: blur(8px);
+    z-index: 333333333;
    
 }
-.menu_options_desktop img{
-
-    width: 150px;
-    height: 150px;
-}
 .menu_options_desktop ul{
+    width:80%;
     display:flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content:center;
     list-style-type: none;
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 2%;
+
 }
 .menu_options_desktop li{
     display:inline-block;
     list-style-type: none;
     text-decoration: none;
-    margin-right: 20px;
 }
 .menu_options_desktop a{
     color:white;
@@ -46,18 +42,19 @@
 }
 .menu_options_desktop{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-self: baseline;
-    align-content: baseline;
-    width: 100%;
+    justify-content:center;
+    align-items: center;
     height: 130px;
+    width: 100%;
     align-items:center;
     border-bottom: 1px solid white;
 
 }
 .menu_options_desktop img{
-    width: 250px;
+    display: flex;
+    width:150px;
+    height: auto;
+    margin-left: 3%;
 }
 
 

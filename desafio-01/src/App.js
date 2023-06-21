@@ -6,6 +6,7 @@ import Corpo from './Corpo';
 import StarBackground from './StarBackground';
 
 function App() {
+
   return (
     <div className='background-geral'>
       <StarBackground/><Menu/><Header/><Corpo/> {/* Use o componente menu dentro do JSX */ }
@@ -13,5 +14,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;

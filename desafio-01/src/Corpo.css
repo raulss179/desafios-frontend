@@ -10,16 +10,26 @@
 
     /* Outras propriedades da fonte, como font-weight, font-style, etc. */
   }
+  html {
+    scroll-behavior: smooth;
+  }
+  .Corpo{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
 .init_description{
+    margin: 200px auto;
     display: flex;
     flex-direction: row;
     width: 100%;
-    padding:200px 150px;
     height:max-content;
     justify-content: center;
 
 }
 .text_description{
+
     display: flex;
     flex-direction: column;
     color: white;
@@ -59,4 +69,46 @@
 .video_description{
     width: 600px;
     text-align:center;
+}
+.WhatsApp a{
+
+    font-size: 40px;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    padding-bottom: 6px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.WhatsApp{
+    position: fixed;
+    right: 3%;
+    bottom: 5%;
+}
+.container {
+    display:flex;
+    z-index: 2;
+    justify-content:center;
+    transition: 10s ease-in-out;
+    transition: transform 0.3s ease-in-out ;
+    margin-bottom: 60px;
+}
+.container.visible {
+    opacity: 1;
+  }
+.container:hover{
+    transform: scale(1.05);
+    z-index: 1;
+    position: relative;
+
+}
+
+.Criando_necessidade h2{
+    font-size: 25px;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Bebas_Neue';
+    margin-bottom: 50px;
+
 }
