@@ -6,15 +6,18 @@ function FormComponent() {
     const [sobrenome, setSobrenome] = useState ('');
     const [email, setEmail] = useState ('');
     const [whatsApp, setWhatsapp] = useState ('');
+    const [texto, setTexto] = useState ('');
+
     
     const handleSubmit = (e) => {e.preventDefault();
     //enviar dados do formulario
-    console.log('Dados Enviados:', {nome, sobrenome, email, whatsApp});
+    console.log('Dados Enviados:', {nome, sobrenome, email, whatsApp, texto});
     //limpar campos do formulario
     setNome('');
     setSobrenome('');
     setEmail('');
     setWhatsapp('');
+    setTexto('');
 
     };
 return(
@@ -31,7 +34,7 @@ return(
 
     <input type='text' placeholder='WhatsApp' value={whatsApp} onChange={(e)=>setWhatsapp(e.target.value)}/>
     <br/>
-
+    <textarea value={texto} placeholder='Escreva para nos!!' onChange={(e)=>setTexto(e.target.value)}/>
     <button type='submit'>Enviar</button>
     </form>
 );

@@ -31,3 +31,14 @@
     text-transform: uppercase;
     margin-bottom: 30px;
 }
+.form-box textarea{
+    width: 300px;
+    border-radius: 10px;
+    height: 250px;
+    color: black;
+    font-family: 'Bebas_Neue';
+    font-size: 15px;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+
+}

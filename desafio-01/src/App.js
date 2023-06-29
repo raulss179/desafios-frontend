@@ -4,12 +4,13 @@ import Header from './Header';
 import './App.css';
 import Corpo from './Corpo';
 import StarBackground from './StarBackground';
+import Footer from './Footer';
 
 function App() {
 
   return (
     <div className='background-geral'>
-      <StarBackground/><Menu/><Header/><Corpo/> {/* Use o componente menu dentro do JSX */ }
+      <StarBackground/><Menu/><Header/><Corpo/><Footer/> {/* Use o componente menu dentro do JSX */ }
     
     </div>
   );
