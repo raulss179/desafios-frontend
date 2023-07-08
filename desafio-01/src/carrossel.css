@@ -1,0 +1,56 @@
+.carrossel {
+display: flex;
+flex-direction: row;
+    text-align: center;
+    overflow: hidden;
+    width: 600px; /* Ajuste o tamanho conforme necessário */
+    height: 200px; /* Ajuste o tamanho conforme necessário */
+ 
+  
+  }
+  
+  .fade-enter {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  
+  .fade-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 500ms, transform 500ms;
+  }
+  
+  .fade-exit {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  .fade-exit-active {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 500ms, transform 500ms;
+    opacity:-20;
+  }
+  
+  
+  .carrossel-imagem {
+    width:150px ;
+    height:150px ;
+    border-radius: 50%;
+    display: flex;
+    margin-top: 25px;
+    justify-content: flex-start;
+    margin-left: 30px;
+  }
+  
+.carrossel-paragrafo {
+font-size:25px;
+margin-top: 43px;
+padding: 30px;
+font-weight:lighter;
+color:white;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+align-items: center;
+text-align: center;
+}
+

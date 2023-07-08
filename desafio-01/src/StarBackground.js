@@ -4,6 +4,7 @@ import './StarBackground.css';
 const StarBackground = () => {
   return (
     <div className="star-background">
+    <div className='background'>
       {Array.from({ length: 100 }, (_, index) => {
         const x = Math.random();
         const y = Math.random();
@@ -21,6 +22,7 @@ const StarBackground = () => {
           <div className="star-2" style={{ '--x': x, '--y': y }} key={index}></div>
         );
       })}
+      </div>
     </div>
   );
 };

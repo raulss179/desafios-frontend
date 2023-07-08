@@ -19,10 +19,11 @@ function Header() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+  
 
   return (
     
-      <div className='Header' style= {{ display: isVisible ? 'block' : 'none',position: isVisible ? 'fixed' : 'none', top: isVisible ? '0' : '-50px' }} >
+      <div className='Header' style= {{ display: isVisible ? 'block' : 'none',position: isVisible ? 'fixed' : 'none', top: isVisible ? '0' : '-50px'  }}>
         
         <div className='menu_options_desktop'>
         <a href='#'><img src={require('./img/logo01.png')} alt='Logo da pagina'/></a>

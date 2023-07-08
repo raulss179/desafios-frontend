@@ -24,7 +24,7 @@ function Menu() {
           <ul>
             <li><a href="#secao01"><MdMiscellaneousServices/> Soluções</a></li>
             <li><a href="#secao02"><BsPersonCheckFill/> Clientes</a></li>
-            <li><a href="#secao03"><GiPriceTag/> Preços</a></li>
+            <li><a href="#"><GiPriceTag/> Preços</a></li>
             <li><a href="#secao04"><MdContactPhone/> Contato</a></li>
           </ul>
         </nav>

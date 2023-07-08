@@ -2,17 +2,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    justify-items: center;
     margin-top: 80px;
     border: 1px solid white;
     color: white;
     font-family: 'Bebas_Neue';
     padding: 60px 40px;
+    border-radius: 8px;
     width: 100%;
-    text-align: justify;
     align-items: flex-end;
     background-image:url(./img/iafeminina2.jpeg);
-    transition: background-image 0.5s ease;
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #0F1620;
@@ -34,9 +32,7 @@
     text-transform: uppercase;
     align-items: center;
     text-align: center;
-    display: block;
-    color: white;
-    background-color: transparent;
+
     
 }
 .form-box h2{

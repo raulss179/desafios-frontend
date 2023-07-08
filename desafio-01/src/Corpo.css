@@ -15,7 +15,7 @@
   }
   .Corpo{
     width: 100%;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -75,7 +75,6 @@
 
 .flip-card p{
     font-family: 'Bebas_Neue';
-    font-family:'Bropotic' ;
     margin-bottom: 10px;
     font-size: 15px;
     color: white;
@@ -84,6 +83,7 @@
 }
 
 .flip-card span{
+    display: flex;
     font-family: 'Bebas_Neue';
     color: white;
     font-size: 18px;
@@ -91,17 +91,21 @@
     animation: border-movement 3s linear infinite;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 20px;
+    align-items: center;
+    padding:10px 10px 40px 40px;
+    width:100%;
+    justify-content: center;
+    align-content: center;
+
    
 }
 .flip-card a{
-    position: absolute;
-    top:200px;
+    top:240px;
     font-family: 'Bebas_Neue';
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    border: 1px solid white;
+    border: 1px solid #ffffff;
     border-radius: 8px;
     padding: 5px 10px;
 }
@@ -110,44 +114,60 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;        
+    justify-content: center; 
 
    
 }
 .flip-card-inner{
-    margin:40px 25px;
-    width: 400px;
+    margin:20px 40px;
+    width: 420px;
     border-radius: 8px;
     background-color: rgba( 0, 0, 0, 0.6);
-    height: 250px;
-    border:1px solid white;
+    height: 300px;
     transform-style: preserve-3d;
-    background-image: url(./img/image03.jpeg);
+    background-image: url(./img/transcription.jpg);
     background-position: center;
     background-size:cover;
     background-repeat: no-repeat;
 
+
     
 }
 .flip-card-inner:nth-child(2){
-    background-image: url(./img/image02.jpeg);
+    background-image: url(./img/iamasculian2.jpeg);
 }
 
 .flip-card-inner:nth-child(3){
     background-image: url(./img/image01.jpg);
 }
 .flip-card-inner:nth-child(4){
-    background-image: url(./img/image04.jpg);
+    background-image: url(./img/transcription01.jpg);
 }
 .flip-card{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.flip-card p{
     display:none;
+
+}
+.flip-card a{
+    display: none;
+    position: absolute;
+    bottom: 20px;
+}
+.flip-card-inner p:hover ~ .flip-card-inner span{
+    transform: rotateY(180deg);
+
 }
 
 .flip-card-inner:hover{
     transform: rotateY(180deg);
     background-image:none;
-
-    .flip-card{
+    
+    .flip-card p , a{
         display: flex;
         flex-direction: column;
         transform: rotateY(180deg);
@@ -156,6 +176,11 @@
     }
 }
 
+
+      .flip-card-inner span:hover{
+        transform:rotateY(180deg) !important;
+        
+    }
 
 
 
@@ -219,6 +244,7 @@
     transition: 10s ease-in-out;
     transition: transform 0.3s ease-in-out ;
     margin-bottom: 60px;
+   
 }
 .container.visible {
     opacity: 1;
@@ -251,40 +277,73 @@
 .Criando_necessidade{
     padding-top: 135px;
 }
-.precos{
-    padding-top: 135px;
-}
-
-.precos td{
-border: 1px solid white;
-width: 50%;
-text-align: left;
-color:white;
-font-family: 'Bebas_Neue';
-}
-
-.precos table{
-    height: 600px;
-}
- .plano h2{
+.container h3{
+    color: white;
     text-transform: uppercase;
-    padding:20px 0;
-    border-bottom: 1px solid white;
-    text-align: center;
-    align-items: center;
-    align-content: center;
 }
-.valor h3{
-    text-align: center;
+
+/*ESTILIZAÇAO DA SESSÃO 02*/
+.Diferencias{
+    display:flex;
+    justify-content: center;
     align-items: center;
-    align-content: center;
-    margin: 5% auto;
+    margin:135px ;
+}
+.Diferencias h1{
+    padding-top: 135px;
+    color:white;
+    text-transform: uppercase;
+    font-family: 'Bebas_Neue';
+    text-align: center;
+    margin-bottom: 40px;
+
+
+}
+.container_border{
+    border: 1px solid white;
+    transition: top 5s ease-in-out;
+    backdrop-filter: blur(8px);
+    border-radius: 8px;
+}
+
+/*ESTILIZAÇÃO DA SESSÃO 03 */
+.precos{
+    display: flex;    
+    color: white;
+    flex-direction:row;
+
+}
+
+
+
+.plano{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid white;
+    border-radius: 8px;
+    margin-left: 5px;
     
 }
 
-.especific p{
-    padding: 10px 10%;
-    align-content: center;
+ .plano h2{
+    justify-content: center;
+    display: flex;
+    height: 80px;
+    color:white;
+    text-transform: uppercase;
+    text-align: center;
     align-items: center;
-    
+    border-bottom: 1px solid white;
+
+}
+.valor_plano h3{
+    text-align: center;
+    padding-top: 30px;
+}
+.diferenciais_plano{
+    padding: 20px 30px;
+}
+
+.diferenciais_plano p{
+    padding-bottom: 10px;
 }
